@@ -1,0 +1,23 @@
+.main {
+  .blurBox {
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .customCardMedia {
+    width: "100%";
+    height: "auto";
+    border-radius: "8px";
+  }
+
+  .blurOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    clip-path: polygon(0 100%, 0 50%, 100% 50%, 100% 100%);
+    background-color: rgba(255, 255, 255, 0.076);
+  }
+}

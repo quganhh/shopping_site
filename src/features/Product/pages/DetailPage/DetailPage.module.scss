@@ -1,0 +1,17 @@
+@import "../../../../styles/media.scss";
+
+.main {
+  margin-top: 80px;
+  @include smallMobile {
+    margin-top: 38px;
+  }
+  .firstPaper {
+    margin-top: 4px;
+  }
+}
+.loading {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

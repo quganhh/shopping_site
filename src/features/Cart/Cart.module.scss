@@ -1,0 +1,141 @@
+@import "../../styles/media.scss";
+
+.main {
+  margin-top: 70px;
+  @include smallMobile {
+    margin-top: 0;
+  }
+  .header {
+    @include smallMobile {
+      display: none;
+    }
+  }
+  .products {
+    padding-top: 5px;
+    .mainBox {
+      margin-top: 2px;
+      .checkBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        @include smallMobile {
+          margin-left: 10px;
+          padding-top: 30px;
+          padding-bottom: 10px;
+          width: 5px;
+          height: 5px;
+        }
+      }
+      .imgBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        @include smallMobile {
+          margin: 0;
+        }
+        .img {
+          width: 70px;
+          height: 70px;
+          @include smallMobile {
+            width: 20px;
+            height: 20px;
+            margin: 0;
+          }
+        }
+      }
+      .mainDesc {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .descTitle {
+          @include smallMobile {
+            font-size: 4px;
+          }
+        }
+        .desc {
+          font-size: 12px;
+          @include smallMobile {
+            font-size: 4px;
+          }
+        }
+      }
+      .priceBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .price {
+          @include smallMobile {
+            font-size: 4px;
+          }
+        }
+        .deleteOutline {
+          cursor: pointer;
+          @include smallMobile {
+            font-size: 10px;
+          }
+        }
+      }
+      .quantity {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .buttonQuantity {
+          width: 30px;
+          height: 30px;
+          padding: 5px;
+          color: #f57224;
+          background-color: lightgrey;
+          &:hover {
+            background-color: rgb(224, 222, 222);
+          }
+
+          @include smallMobile {
+            font-size: 1px;
+            height: 10px;
+            width: 10px;
+            padding-top: 3px;
+            padding-bottom: 5px;
+          }
+        }
+        .numberQuantity {
+          padding: 5px;
+          height: 32px;
+          width: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @include smallMobile {
+            font-size: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+.loadingPage {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loadingBackground {
+  width: 500px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  .loading {
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+}

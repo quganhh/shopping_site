@@ -1,0 +1,195 @@
+@import "../../../../styles/media.scss";
+
+.main {
+  .shortDescription {
+    font-style: italic;
+  }
+  .boxRate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .linksRate {
+      margin-left: 10px;
+      font-size: 12px;
+      cursor: pointer;
+      color: #136cff;
+    }
+  }
+
+  .brandBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .linksBrand {
+      padding: 10px;
+      font-size: 12px;
+      cursor: pointer;
+      color: #136cff;
+    }
+
+    .linksLookMore {
+      padding: 10px;
+      font-size: 12px;
+      cursor: pointer;
+      color: #136cff;
+    }
+  }
+
+  .priceBox {
+    margin-top: 5px;
+    .salePrices {
+      font-size: 35px;
+      color: #f57224;
+    }
+
+    .originPrices {
+      text-decoration: line-through;
+      color: grey;
+    }
+
+    .currencyPrices {
+      color: #f57224;
+      text-decoration: underline;
+      font-size: 25px;
+      margin-left: 10px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+  }
+
+  .promoGrid {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    .promoHeadingText {
+      font-size: 15px;
+    }
+
+    .promoFirstText {
+      font-size: 14px;
+      color: #fff;
+      background-color: #f57224;
+      margin-top: 1px;
+      width: 340px;
+      @include smallMobile {
+        font-size: 12px;
+        width: 300px;
+      }
+    }
+
+    .promoSecondText {
+      font-size: 14px;
+      color: #fff;
+      background-color: #f57224;
+      margin-top: 2px;
+      width: 170px;
+      @include smallMobile {
+        font-size: 12px;
+        width: 150px;
+      }
+    }
+  }
+
+  .payLaterGrid {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+    .payLaterTypo {
+      font-size: 15px;
+    }
+
+    .payLaterTextGrid {
+      display: flex;
+      flex-direction: row;
+
+      .iconCalender {
+        font-size: 16px;
+      }
+
+      .payLaterText {
+        font-size: 14px;
+      }
+    }
+  }
+  .categoriesGrid {
+    display: flex;
+    flex-direction: column;
+
+    .categoriesColor {
+      font-size: 15px;
+      margin-top: 25px;
+    }
+
+    .typeMemmories {
+      .categoriesMemmories {
+        font-size: 15px;
+      }
+
+      .memoriesButton {
+        .cusButtonGroup {
+          color: black;
+          margin-right: 10px;
+          margin-top: 10px;
+          background-color: white;
+          border-color: #f57224;
+
+          &:hover {
+            background-color: lightgrey;
+            border-color: #f38d51;
+          }
+        }
+      }
+    }
+  }
+  .slider {
+    .productPaper {
+      width: 100px;
+    }
+    .productImage {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .buttonBox {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .buttonCount {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    margin-left: 12px;
+  }
+
+  .eventButton {
+    .buttonBuyNow {
+      background-color: #ffb916;
+      color: white;
+      width: 200px;
+      height: 40px;
+      transition: opacity 0.3s ease;
+
+      :hover {
+        opacity: 1;
+        background-color: #ebad1a;
+      }
+    }
+
+    .buttonAddToCart {
+      background-color: #f57224;
+      color: white;
+      width: 200px;
+      height: 40px;
+      transition: opacity 0.3s ease;
+
+      :hover {
+        opacity: 1;
+        background-color: #e56a22;
+      }
+    }
+  }
+}

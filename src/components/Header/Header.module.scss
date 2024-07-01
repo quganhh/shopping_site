@@ -1,0 +1,44 @@
+@import "../../styles/media.scss";
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-49%);
+  width: 95%;
+  z-index: 999;
+  @include smallMobile {
+    padding: 5px;
+  }
+  .logoImg {
+    width: 30%;
+    @include smallMobile {
+      width: 10%;
+    }
+    @include pcAndTablet {
+      width: 50%;
+    }
+
+    @include smallTabletAndMobile {
+      width: 40%;
+    }
+  }
+
+  .icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .cartIcon {
+      font-size: 32px;
+      @include smallMobile {
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.main {
+  .headingTypography {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 2;
+  }
+
+  .tableBox {
+    padding-right: 10px;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+
+    .rateTypography {
+      font-size: 10px;
+    }
+
+    .percentTypography {
+      font-weight: bold;
+      margin-top: 15px;
+      font-size: 20px;
+    }
+  }
+
+  .linkBox {
+    padding: 20px;
+
+    .customLink {
+      font-weight: bold;
+    }
+  }
+}

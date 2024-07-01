@@ -1,0 +1,35 @@
+@import "../../../../styles/media.scss";
+
+.productNotAvailable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  font-size: 30px;
+  color: #757575;
+
+  @include pcAndTablet {
+    font-size: 20px;
+  }
+  @include smallMobile {
+    font-size: 13px;
+  }
+}
+
+.product {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .distance {
+    height: 10px;
+    line-height: 10px;
+    margin: 0;
+    padding: 0;
+  }
+}

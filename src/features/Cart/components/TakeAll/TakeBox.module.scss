@@ -1,0 +1,14 @@
+@import "../../../../styles/media.scss";
+.main {
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .checkBoxTypo {
+      @include smallMobile {
+        font-size: 14px;
+        margin: 10px;
+      }
+    }
+  }
+}

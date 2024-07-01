@@ -1,0 +1,85 @@
+.imageBar {
+  margin: 0 auto;
+
+  .productName {
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    height: 32px;
+    line-height: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-overflow: ellipsis;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      color: #1a9cb7;
+    }
+  }
+
+  .productPrice {
+    margin-top: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    color: #f57224;
+  }
+
+  .productSale {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 10px;
+    color: #757575;
+  }
+
+  .productReview {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 2px;
+    height: 20px;
+    line-height: 20px;
+
+    .productSold {
+      color: #212121;
+
+      .straightLine {
+        top: 1px;
+        display: inline-block;
+        width: 1px;
+        height: 10px;
+        margin: 0 5px;
+        background-color: #dadada;
+      }
+    }
+
+    .productRating {
+      .starRoundedIcon {
+        font-size: 15px;
+        margin-top: 5px;
+      }
+    }
+
+    .productStoreAddress {
+      color: #9e9e9e;
+      font-size: 10px;
+      flex-grow: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: right;
+    }
+  }
+}

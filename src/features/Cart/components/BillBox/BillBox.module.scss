@@ -1,0 +1,131 @@
+@import "../../../../styles/media.scss";
+
+.main {
+  @include smallMobile {
+    height: 100%;
+    width: 100%;
+  }
+  .locationTypo {
+    font-size: 15px;
+    @include smallMobile {
+      font-size: 10px;
+    }
+  }
+  .location {
+    .locationIcon {
+      margin-top: 20px;
+      @include smallMobile {
+        font-size: 10px;
+      }
+    }
+    .inputAddress {
+      @include smallMobile {
+        font-size: 10px;
+      }
+    }
+  }
+  .infoTypo {
+    font-size: 15px;
+    @include smallMobile {
+      font-size: 10px;
+    }
+  }
+  .firstCount {
+    .countTypo {
+      font-size: 14px;
+
+      @include smallMobile {
+        font-size: 10px;
+      }
+    }
+    .priceCount {
+      font-size: 14px;
+
+      @include smallMobile {
+        font-size: 10px;
+      }
+    }
+  }
+  .shippingFee {
+    .shippingFeeTypo {
+      @include smallMobile {
+        font-size: 10px;
+      }
+    }
+    .shippingFeePrice {
+      display: flex;
+      flex-direction: row;
+
+      @include smallMobile {
+        font-size: 10px;
+      }
+    }
+  }
+  .fillFormPromo {
+    // margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @include smallMobile {
+      margin: 2px;
+      padding-left: 50px;
+    }
+    .promoField {
+      @include smallMobile {
+        width: 100%;
+        height: 10px;
+        margin-bottom: 30px;
+      }
+    }
+    .promoButton {
+      @include smallMobile {
+        font-size: 10px;
+      }
+    }
+  }
+  .totalBox {
+    .totalTypo {
+      font-size: 14px;
+
+      @include smallMobile {
+        font-size: 10px;
+      }
+    }
+    .price {
+      color: #f57224;
+      font-weight: bold;
+
+      @include smallMobile {
+        font-size: 10px;
+      }
+    }
+    .totalPriceTypo {
+      @include smallMobile {
+        font-size: 10px;
+      }
+    }
+  }
+  .vat {
+    margin-top: 10px;
+    .vatTypo {
+      @include smallMobile {
+        font-size: 10px;
+      }
+    }
+  }
+  .confirmButton {
+    background-color: #f57224;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &:hover {
+      background-color: orange;
+    }
+    @include smallMobile {
+      font-size: 10px;
+    }
+  }
+}

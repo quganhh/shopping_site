@@ -1,0 +1,89 @@
+@import "../../../../styles/media.scss";
+
+.product {
+  max-width: 1200px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 13px;
+  text-align: left;
+  margin: auto;
+
+  @include pcAndTablet {
+    padding: 8px;
+  }
+
+  .container {
+    position: relative;
+
+    .header {
+      @include smallMobile {
+        display: none;
+      }
+
+      .skeletonHeader {
+        display: flex;
+        justify-content: space-between;
+      }
+      .headerBar {
+        padding: 10px;
+      }
+    }
+
+    .anchor {
+      display: none;
+      width: 40px;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      @include smallMobile {
+        display: block;
+      }
+    }
+
+    .main {
+      margin-top: 10px;
+
+      @include smallTabletAndMobile {
+        margin-top: 0;
+      }
+    }
+
+    .filterPage {
+      @include smallMobile {
+        display: none;
+      }
+    }
+
+    .listProductsPage {
+      @include smallMobile {
+        flex: 1;
+      }
+
+      .productsSkeleton {
+        display: flex;
+        flex-wrap: wrap;
+
+        .productSkeleton {
+          width: 21%;
+          margin: 0 2% 4% 2%;
+
+          .mallImg {
+            margin-top: 2%;
+          }
+
+          @include pcAndTablet {
+            width: 31%;
+            margin: 0 1% 3% 1%;
+          }
+
+          @include smallMobile {
+            width: 100%;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

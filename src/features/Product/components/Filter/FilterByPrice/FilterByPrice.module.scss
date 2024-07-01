@@ -1,0 +1,93 @@
+@import "../../../../../styles/media.scss";
+
+.priceBox {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0;
+
+  @include smallTabletAndMobile {
+    flex-direction: column;
+  }
+
+  @include smallMobile {
+    flex-direction: row;
+  }
+
+  input[type="number"] {
+    float: left;
+    display: block;
+    width: 30%;
+    height: 25px;
+    padding: 0 7px;
+    text-align: left;
+    color: #404040;
+    border: 1px solid #a8a8a8;
+    border-radius: 3px;
+    outline: 0;
+    background-color: #fff;
+    min-width: auto;
+
+    @include pcAndTablet {
+      height: 20px;
+    }
+
+    @include smallTabletAndMobile {
+      width: 85%;
+    }
+  }
+
+  .dash {
+    width: 4%;
+    border: 1px solid #a8a8a8;
+    margin: 4%;
+  }
+
+  button.applyButton {
+    position: relative;
+    float: left;
+    width: 12%;
+    height: 25px;
+    border-radius: 3px;
+    margin-left: 10px;
+    outline: 0;
+    background-color: #f79458;
+    border-color: #f79458;
+    color: #fff;
+
+    @include pcAndTablet {
+      height: 20px;
+    }
+
+    @include smallTabletAndMobile {
+      width: 100%;
+      margin: 13px 0 0 0;
+    }
+
+    @include smallMobile {
+      width: 20%;
+      margin: 0 0 0 20px;
+    }
+
+    &:hover {
+      background-color: #40a9ff;
+      border-color: #40a9ff;
+    }
+
+    &:active {
+      background-color: #008cff;
+      border-color: #008cff;
+    }
+
+    .playIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
